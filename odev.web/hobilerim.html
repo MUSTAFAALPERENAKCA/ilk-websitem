@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Script-->
+    <script src="script.js" defer></script>
+    <title>Moview</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --main-color: #dddddd;
+        --assistant-color: #1a242e;
+      }
+
+      body {
+        font-family: "Space Grotesk", sans-serif;
+        background-color: var(--main-color);
+      }
+
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      .movie {
+        width: 300px;
+        margin: 1rem;
+        background-color: var(--assistant-color);
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
+        position: relative;
+        overflow: hidden;
+        border-radius: 3px;
+      }
+
+      .movie img {
+        width: 100%;
+      }
+
+      .movie-info {
+        color: #79b8f3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+      }
+
+      .movie-info span {
+        background-color: var(--main-color);
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+        font-size: 90%;
+        font-weight: bold;
+      }
+
+      .movie-info span.green {
+        color: lightgreen;
+      }
+
+      .movie-info span.orange {
+        color: lightsalmon;
+      }
+
+      .movie-info span.red {
+        color: lightcoral;
+      }
+
+      .overview {
+        background-color: #566b84;
+        color: #111;
+        padding: 2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-height: 100%;
+        transform: translateY(101%);
+        overflow-y: auto;
+        transition: transform 0.5s ease-in;
+      }
+
+      .overview h3 {
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #79b8f3;
+        width: 50%;
+      }
+
+      .movie:hover .overview {
+        transform: translateY(0);
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo"
+        ><img src="logo.png" width="50px" alt="" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="iletişim.html">İLETİŞİM</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="cv.html">CV</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="şehrim.html">ŞEHRİM</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="mirasımız.html">MİRASIMIZ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="hobilerim.html">İLGİ ALANLARI</a>
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    </header>
+    <main id="main"></main>
+
+    <footer class="main-footer">
+      <p class="main-footer-logo">
+        Alperen Akça tarafından oluşturulmuş bir kişisel websitedir.
+      </p>
+      <nav class="footer-nav">
+        <ul class="footer-nav-items">
+          <li class="footer-nav-item">
+            <a
+              href="https://instagram.com/alperenakcaofficial?igshid=ZGUzMzM3NWJiOQ=="
+              >instagram</a
+            >
+          </li>
+          <li class="footer-nav-item">
+            <a
+              href="https://twitter.com/siralperenakca?t=oVqtZDSX7ajFpfBiM_dcIw&s=08"
+              >twitter</a
+            >
+          </li>
+          <li class="footer-nav-item">
+            <a href="https://github.com/MUSTAFAALPERENAKCA">github</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="mailto:mustafaalperenakca1907@gmail.com">mail gönder</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
